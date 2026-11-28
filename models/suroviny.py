@@ -1,6 +1,8 @@
 """
-Modul obsahuje třídy pro jednotlivé suroviny v aplikaci Interaktivní lednice.
-Ukazuje princip dědičnosti: všechny konkrétní suroviny dědí ze třídy Surovina.
+Modul suroviny.py definuje datové modely pro jednotlivé typy ingrediencí.
+Demonstruje princip dědičnosti: společnou logiku názvu řeší rodičovská třída
+Surovina, jednotlivé podtřídy (Maso, Priloha, Koreni, Omacka) ji rozšiřují
+o své specifické atributy a vlastní textový výpis.
 """
 
 
