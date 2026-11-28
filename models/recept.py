@@ -39,7 +39,7 @@ class Recept:
         print(f"\n=== {self.nazev.upper()} ===")
         print(f"Odměna za uvaření: {self.xp_odmena} XP")
         print("\nPotřebné suroviny:")
-        # Zde se automaticky zavolá metoda __str__ z našeho souboru suroviny.py!
+        # Zde se automaticky zavolá metoda __str__ ze souboru suroviny.py
         print(f"  - Maso: {self.maso}")
         print(f"  - Příloha: {self.priloha}")
         print(f"  - Koření: {self.koreni}")
@@ -54,15 +54,13 @@ class Recept:
         return f"{self.nazev} ({self.maso.nazev}, {self.priloha.nazev}) - {self.xp_odmena} XP"
 
 
-# --- RYCHLÁ ZKOUŠKA TOHOTO SOUBORU ---
 if __name__ == "__main__":
-    # 1. Vytvoříme suroviny (objekty z Commitu #2)
+
     kureci = Maso("kuřecí", 20)
     ryze = Priloha("rýže", True)
     kari = Koreni("kari", 2)
     smetana = Omacka("smetanová", "smetanový")
 
-    # 2. Sepíšeme postup jako seznam 4 krátkých kroků
     postup_kari = [
         "Kuřecí maso nakrájej na kostičky, osol a zlehka opepři.",
         "Dej vařit rýži v osolené vodě podle návodu.",
@@ -70,7 +68,7 @@ if __name__ == "__main__":
         "Zalij smetanovou omáčkou, povař 5 minut a podávej s rýží."
     ]
 
-    # 3. Spojíme vše do jednoho objektu Recept (kompozice)
+
     recept_kari = Recept(
         nazev="Kuřecí na kari s rýží",
         maso=kureci,
@@ -81,7 +79,6 @@ if __name__ == "__main__":
         xp_odmena=50
     )
 
-    # 4. Vyzkoušíme výpis i kontrolu surovin
     print("Krátký náhled:", recept_kari)
     recept_kari.vypis_recept()
 

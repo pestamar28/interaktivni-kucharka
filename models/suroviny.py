@@ -68,13 +68,7 @@ class Omacka(Surovina):
         return f"{self.nazev} (základ: {self.zaklad})"
 
 
-
-# V __init__ přijme (self, nazev, zaklad) - např. zaklad="smetanový" nebo "sójový".
-# V metodě __str__ vrať text ve tvaru: f"{self.nazev} (základ: {self.zaklad})"
-
-
-# --- RYCHLÁ ZKOUŠKA TOHOTO SOUBORU ---
-# Tento kód se spustí jen tehdy, když pustíš přímo soubor suroviny.py
+# Tento kód se spustí jen tehdy, když se pustí přímo soubor suroviny.py
 if __name__ == "__main__":
     kureci = Maso("Kuřecí prsa", 20)
     ryze = Priloha("Rýže", True)
